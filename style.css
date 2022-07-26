@@ -1,0 +1,150 @@
+/* Global vuew */
+body {
+  color: white;
+  font-family: "Asap", sans-serif;
+  font-family: "Playfair Display", serif;
+  font-family: "Roboto", sans-serif;
+  background-color: #ebebeb;
+}
+
+.header-container {
+  background-color: rgb(61, 60, 60);
+  min-height: 100px;
+  position: fixed;
+  width: 100%;
+}
+
+header {
+  max-width: 1024px;
+  /* background-color: blueviolet; */
+  min-height: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  padding: 20px 30px;
+}
+
+.mob-wrapper {
+  display: none;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.mybutton {
+  padding: 10px 25px;
+  border: solid 1px;
+  margin-left: 20px;
+}
+
+.container {
+  min-height: 500px;
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 120px 10px 10px;
+}
+
+.col {
+  background-color: rgb(9, 156, 83);
+  width: 32%;
+  margin-bottom: 30px;
+}
+
+.col p {
+  font-size: 0.825rem;
+  padding: 20px 25px;
+  line-height: 1.25rem;
+}
+
+.col img {
+  width: 100%;
+  height: auto;
+}
+
+.col p::first-line {
+  font-weight: 700;
+}
+
+.hide-desktop-only {
+  display: none;
+}
+/* Tablet view */
+@media (max-width: 768px) {
+  .header-container {
+    max-height: 60px;
+    align-items: center;
+  }
+
+  .col {
+    width: 48%;
+  }
+  .hide-desktop-only {
+    display: block;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .mob-wrapper {
+    display: block;
+    padding: 15px 20px;
+  }
+
+  .mob-nav {
+    display: none;
+    position: absolute;
+    padding-top: 10px;
+  }
+
+  .burgmenu {
+    cursor: pointer;
+  }
+
+  nav a {
+    display: block;
+  }
+
+  .navbutton {
+    display: block;
+    background-color: rgb(105, 106, 107);
+    padding: 15px 30px;
+    margin-left: -65px;
+    text-align: center;
+  }
+}
+
+/* Mobile vuew */
+
+@media (max-width: 400px) {
+  .col {
+    width: 100%;
+  }
+
+  .header-container {
+    max-height: 60px;
+    position: fixed;
+    width: 100%;
+  }
+
+  .logo {
+    padding: 10px;
+  }
+
+  .mob-wrapper {
+    padding: 10px;
+  }
+}
